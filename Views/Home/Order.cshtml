@@ -1,0 +1,111 @@
+﻿@{
+    ViewData["Title"] = "Order";
+}
+<h1>@ViewData["Title"]</h1>
+<div class="shop-container">
+    <div class="grid-container">
+        <!-- Item 1 -->
+        <div class="item-card">
+            <img src="~/images/zulu pots.jpg" width="550" height="450" />
+            <div class="item-details">
+                <h3 class="item-title">Item 1</h3>
+                <p class="item-description">Traditional Zulu Pottery</p>
+                <p class="item-price">R83.00</p>
+                <button class="add-to-cart btn btn-primary" data-name="Zulu Pots" data-price="83.00">Add to Cart</button>
+            </div>
+        </div>
+        <br />
+        <!-- Item 2 -->
+        <div class="item-card">
+            <img src="~/images/istockphoto-172134865-1024x1024-transformed.jpeg" width="550" height="450" />
+            <div class="item-details">
+                <h3 class="item-title">Item 2</h3>
+                <p class="item-description">Traditionally Woven Baskets</p>
+                <p class="item-price">R56.00</p>
+                <button class="add-to-cart btn btn-primary" data-name="Baskets" data-price="56.00">Add to Cart</button>
+            </div>
+        </div>
+        <br />
+        <!-- Item 3 -->
+        <div class="item-card">
+            <img src="~/images/beads3-transformed.jpeg" width="550" height="450" />
+            <div class="item-details">
+                <h3 class="item-title">Item 3</h3>
+                <p class="item-description">Traditional Beadwork</p>
+                <p class="item-price">R48.00</p>
+                <button class="add-to-cart btn btn-primary" data-name="Beadwork" data-price="48.00">Add to Cart</button>
+            </div>
+        </div>
+        <br />
+        <!-- Item 4 -->
+        <div class="item-card">
+            <img src="~/images/spp.jpg" width="550" height="450" />
+            <div class="item-details">
+                <h3 class="item-title">Item 4</h3>
+                <p class="item-description">Traditionally made spear and ihawu</p>
+                <p class="item-price">R540.OO</p>
+                <button class="add-to-cart btn btn-primary" data-name="Spear" data-price="540.00">Add to Cart</button>
+            </div>
+        </div>
+        <br />
+        <!-- Item 5 -->
+        <div class="item-card">
+            <img src="~/images/dolls1.jpg" width="550" height="450" />
+            <div class="item-details">
+                <h3 class="item-title">Item 5</h3>
+                <p class="item-description">Authentic Ndebele Dolls</p>
+                <p class="item-price">R63.00</p>
+                <button class="add-to-cart btn btn-primary" data-name="Sewn Dolls" data-price="63.00">Add to Cart</button>
+            </div>
+        </div>
+        <br />
+        <!-- Item 6 -->
+        <div class="item-card">
+            <img src="~/images/sqwayi.jpg" width="550" height="450" />
+            <div class="item-details">
+                <h3 class="item-title">Item 6</h3>
+                <p class="item-description">Authentic isiqwayi</p>
+                <p class="item-price">R85.00</p>
+                <button class="add-to-cart btn btn-primary" data-name="isiqwayi" data-price="85.00">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Cart Table -->
+<div class="row mt-4">
+    <div class="col">
+        <h2>Your Cart</h2>
+        <table class="cart-table table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody class="cart-items">
+                <!-- Cart items will be dynamically populated here -->
+            </tbody>
+        </table>
+        <div>Total price: R<span class="total-cart"></span></div>
+    </div>
+   
+</div>
+<button class="clear-cart btn btn-danger">Clear Cart</button>
+<script>
+    // Add to cart functionality
+    $('.add-to-cart').click(function () {
+        var name = $(this).data('name');
+        var price = $(this).data('price');
+        addItemToCart(name, price, 1);
+        displayCart();
+    });
+
+    // Call displayCart() when the page loads
+    $(document).ready(function () {
+        displayCart();
+    });
+</script>

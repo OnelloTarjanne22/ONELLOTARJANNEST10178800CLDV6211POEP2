@@ -1,0 +1,172 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+header {
+    background-color: #c2452d;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: blanchedalmond;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+    #myUL li a {
+        border: 1px solid #ddd;
+        margin-top: -1px;
+        background-color: #f6f6f6;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        color: black;
+        display: block
+    }
+
+        #myUL li a:hover:not(.header) {
+            background-color: #eee;
+        }
+
+img {
+    border: 4px solid;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer {
+    background-color: #c2452d;
+}
+
+.image-container {
+    display: inline-block;
+}
+
+img {
+    border: 10px solid transparent;
+    border-image: url('../images/beadpat.jpg') 30 repeat;
+}
+
+.button,
+.add-to-cart {
+    color: white;
+    background-color: #c2452d;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add smooth transition */
+}
+
+    .button:hover {
+        background-color: darkred;
+    }
+
+@media only screen and (max-width: 768px) {
+    .navbar-collapse {
+        flex-direction: column;
+    }
+
+    .navbar-nav {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .navbar-brand img {
+        width: 50px;
+        height: auto;
+    }
+
+    .logo {
+        width: 70px;
+        height: auto;
+    }
+
+    img {
+        border: 10px solid transparent;
+        border-image: url('../images/beadpat.jpg') 30 repeat;
+    }
+}
+
+.navbar-nav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+    .navbar-nav .nav-item {
+        margin: 0 10px;
+    }
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .footer {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    img {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.form-inline .btn-outline-success {
+    color: #fff;
+    background-color: #c2452d;
+    border-color: black;
+}
+
+.search-container {
+    border: 1px solid black;
+}
+
+.form-inline .btn-outline-success:hover {
+    background-color: brown;
+    border-color: black;
+}

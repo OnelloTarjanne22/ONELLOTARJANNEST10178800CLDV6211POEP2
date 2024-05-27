@@ -1,0 +1,36 @@
+﻿@model List<ONELLOTARJANNEST10178800CLDV6211POEPART1.Models.transactionTbl>
+
+@{
+    ViewData["Title"] = "User Transactions";
+}
+
+<h1>User Orders</h1>
+
+@if (Model == null || !Model.Any())
+{
+    <p>No Orders found.Ensure that you are logged in</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Transaction ID</th>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var transaction in Model)
+            {
+                <tr>
+                    <td>@transaction.TransactionID</td>
+                    <td>@transaction.ProductID</td>
+                    <td>@transaction.ProductName</td>
+                    <td>@transaction.Price</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
