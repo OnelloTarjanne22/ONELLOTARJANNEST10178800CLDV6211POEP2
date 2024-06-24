@@ -6,7 +6,16 @@ namespace ONELLOTARJANNEST10178800CLDV6211POEPART1.Controllers
     public class ProductController : Controller
     {
         private readonly productTbl _prodtbl = new productTbl();
-
+        private readonly SearchService _searchService;
+public ProductController(SearchService searchService)
+        {
+            _searchService = searchService;
+        }
+        public async Task<IActionResult> Search(string query)
+        {
+            var results = await _searchService.SearchProductsAsync(query);
+            return View(results);
+        }
         [HttpPost]
         public ActionResult Product(productTbl products)
         {
