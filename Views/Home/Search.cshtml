@@ -1,0 +1,20 @@
+﻿@model IEnumerable<Product>
+@{
+    ViewData["Title"] = "Search Results";
+}
+
+<h2>Search Results</h2>
+
+<form asp-action="Search" method="get">
+    <input type="text" name="query" />
+    <button type="submit">Search</button>
+</form>
+
+<ul>
+    @foreach (var product in Model)
+    {
+        <li>
+            @product.Name-@product.Price
+        </li>
+    }
+</ul>

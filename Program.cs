@@ -1,5 +1,13 @@
+using ONELLOTARJANNEST10178800CLDV6211POEPART1;
+
 public class Program
 {
+    public void ConfigureServices(IServiceCollection services)
+    {
+        services.AddControllersWithViews();
+        services.AddHttpClient<OrderService>();
+    }
+
     public static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
@@ -44,6 +52,12 @@ public class Program
 
         app.Run();
     }
+    public void ConfigureServices(IServiceCollection services)
+    {
+        services.AddControllersWithViews();
+        services.AddSingleton<SearchService>();
+    }
+
 }
 
 

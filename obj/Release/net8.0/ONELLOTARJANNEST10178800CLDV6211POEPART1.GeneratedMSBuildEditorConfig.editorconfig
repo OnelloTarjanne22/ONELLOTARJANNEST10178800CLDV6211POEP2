@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\travi\source\repos\ONELLOTARJANNEST10178800CLDV6211POEPART1\ONELLOTARJANNEST10178800CLDV6211POEPART1
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/travi/source/repos/ONELLOTARJANNEST10178800CLDV6211POEPART1/ONELLOTARJANNEST10178800CLDV6211POEPART1/search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = c2VhcmNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/travi/source/repos/ONELLOTARJANNEST10178800CLDV6211POEPART1/ONELLOTARJANNEST10178800CLDV6211POEPART1/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -64,6 +68,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/travi/source/repos/ONELLOTARJANNEST10178800CLDV6211POEPART1/ONELLOTARJANNEST10178800CLDV6211POEPART1/Views/Home/ProView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9WaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/travi/source/repos/ONELLOTARJANNEST10178800CLDV6211POEPART1/ONELLOTARJANNEST10178800CLDV6211POEPART1/Views/Home/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZWFyY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/travi/source/repos/ONELLOTARJANNEST10178800CLDV6211POEPART1/ONELLOTARJANNEST10178800CLDV6211POEPART1/Views/Home/Sign.cshtml]
